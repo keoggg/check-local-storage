@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('localStorage access successful');
     } catch (error) {
       console.log('access denied for localStorage');
-      const iframe = document.querySelector('.check-incognito');
+      const iframe = document.querySelector('.check-incognito').contentWindow;
       
       console.log(iframe);
 
