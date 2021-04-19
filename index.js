@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {  
   try {
-    window.localStorage.setItem('test', 'test');    
+    window.localStorage;   
   } catch (error) {         
     window.parent.postMessage('localStorage not accessible', '*');
   }  
